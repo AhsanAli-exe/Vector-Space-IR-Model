@@ -1,1 +1,1 @@
-a is  the of  all and  to can be a once  for at am are ha have had up his her in on no we do       
+automated patent classification using word embedding automated classification patent word embedding deep learning patent classification task assign special code patent where assigned code used group patent with similar subject into same category this paper present patent categorization method based word embedding long short term memory network classify patent down subgroup ipc level experimental result indicate that our classification method achieve accuracy subgroup level
