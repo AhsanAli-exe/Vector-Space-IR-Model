@@ -1,3 +1,6 @@
+import nltk
+nltk.download('punkt')
+nltk.download('wordnet')  
 import streamlit as st
 from computeSimilarity import rankDocs, loadTfidfData
 
