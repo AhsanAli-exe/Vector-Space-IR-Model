@@ -43,15 +43,15 @@ def ComputeQueryVector(query,term_list,idf):
 
     return queryVector
 
-with open("tfidf_data.pkl","rb") as f:
-    tfidf_data = pickle.load(f)
-    termList = tfidf_data['term_list']
-    idf = tfidf_data['idf']
+# with open("tfidf_data.pkl","rb") as f:
+#     tfidf_data = pickle.load(f)
+#     termList = tfidf_data['term_list']
+#     idf = tfidf_data['idf']
 
-query = 'weak heuristic'
-processed = preprocessQuery(query)
-queryVector = ComputeQueryVector(processed,termList,idf)
-print(queryVector)
+# query = 'weak heuristic'
+# processed = preprocessQuery(query)
+# queryVector = ComputeQueryVector(processed,termList,idf)
+# print(queryVector)
 
 
 
