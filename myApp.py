@@ -23,10 +23,8 @@ st.markdown("""
 <style>
     /* Remove all white space above */
     .stApp {
-        margin-top: -2rem;
-        padding-top: 0;
+        padding-top: 1rem;
     }
-    
     .search-box {
         border-radius: 8px;
         background: #f0f2f6;
@@ -76,17 +74,22 @@ def docContent(doc_id):
     except:
         return "Document not found in the Abstracts directory"
 
-st.sidebar.title("University: FAST NUCES")
-st.sidebar.markdown("[Ahsan Ali's LinkedIn](https://www.linkedin.com/in/ahsan--ali)")
-st.sidebar.title("ℹ️ How to Use")
-st.sidebar.info("""
-1. Type your query in search box  
-2. Press Enter or click Search  
-3. View ranked results below
-""")
 
 st.title("_Vector_ _Space_ :blue[Model] :sunglasses:")
 st.header("Developed by: :blue[Ahsan Ali]")
+with st.sidebar:
+    st.title("[Ahsan Ali's LinkedIn](https://www.linkedin.com/in/ahsan--ali)")
+    st.sidebar.title("ℹ️ How to Use")
+    st.markdown("## Instructions")
+    st.sidebar.markdown("""
+    - **Phrase Queries:**
+    1. Write any phrase.
+    2. Only **alphabets** allowed.
+    """)
+    st.sidebar.write("💡 Try queries like:")
+    st.sidebar.code("weak heuristic")
+    st.sidebar.code("ensemble")
+
 with st.form("searchForm"):
     with st.container():
         st.markdown('<div class="search-box">',unsafe_allow_html=True)
