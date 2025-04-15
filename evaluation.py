@@ -1,8 +1,5 @@
 from computeSimilarity import loadTfidfData,rankDocs
 import math
-
-
-
 # Complete query set with relevant documents
 QUERIES = {
     "deep": {
