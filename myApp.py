@@ -126,7 +126,7 @@ if submitted:
                 term_list,
                 idf,
                 tfidf_vectors,
-                alpha=0.001,
+                alpha=alpha_value,
             )
         st.subheader(f"Results for: '{query}'")
         if not rankedDocs:

@@ -14,7 +14,7 @@ def cosineSimilarity(queryVector,tfidfVectors):
 
     return dotProduct/(normA*normB) if (normA*normB) != 0 else 0
 
-def rankDocs(query,term_list,idf,tfidf_vectors,alpha=0.05):
+def rankDocs(query,term_list,idf,tfidf_vectors,alpha):
     processedQuery = preprocessQuery(query)
     queryVector = ComputeQueryVector(processedQuery,term_list,idf)
     results = []
